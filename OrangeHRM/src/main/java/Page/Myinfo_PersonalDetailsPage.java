@@ -1,6 +1,8 @@
 package Page;
 
 import java.awt.AWTException;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +29,7 @@ public class Myinfo_PersonalDetailsPage extends BasePage {
 	@FindBy(name ="lastName")
 	WebElement LastName;
 	
-	@FindBy(xpath = "(//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input'])[1]")
+	@FindBy(xpath = "(//span[contains(@class,'oxd-radio-input--active')])[1]")
 	WebElement genderselection;
 	
 	@FindBy(xpath ="(//div[@class='oxd-select-text oxd-select-text--active'])[2]")
@@ -36,7 +38,7 @@ public class Myinfo_PersonalDetailsPage extends BasePage {
 	@FindBy(xpath = "(//div[@class='oxd-select-wrapper'])[1]")
 	WebElement Nationality;
 	
-	@FindBy(xpath ="(//button[@type='submit'])[1]")
+	@FindBy(xpath ="(//div[@class='oxd-form-actions'])/button")
 	WebElement savebutton1;
 	
 	@FindBy(css =".oxd-button.oxd-button--medium.oxd-button--text")
@@ -45,16 +47,16 @@ public class Myinfo_PersonalDetailsPage extends BasePage {
 	@FindBy(className ="oxd-file-button")
 	WebElement Browse;
 	
-	@FindBy(xpath ="(//button[@type='submit'])[2]")
+	@FindBy(xpath ="//form[.//label[text()='Select File']]//button[@type='submit' and contains(., 'Save')]")
 	WebElement savebutton2;
 	
-	@FindBy(xpath = "//i[contains(@class, 'bi-download')]")
+	@FindBy(xpath ="//button[i[contains(@class, 'bi-download')]]")
     WebElement DownloadButton ;
 	
 	@FindBy(xpath ="(//button[@type='submit'])[3]")
 	WebElement Downloadsavebutton;
 	
-	@FindBy(css =".oxd-icon.bi-trash")
+	@FindBy(xpath ="//button[i[contains (@class, 'bi-trash')]]")
 	WebElement Deletebutton;
 	
 	@FindBy(css=".oxd-icon.bi-trash.oxd-button-icon")
@@ -113,20 +115,20 @@ public class Myinfo_PersonalDetailsPage extends BasePage {
 		savebutton1.click();
     }
 	
-	public void Clickaddbutton() throws InterruptedException, AWTException
+	public void Clickaddbutton() throws InterruptedException, AWTException, UnsupportedFlavorException, IOException
 	{
 		waitForVisibility(addbutton);
 		addbutton.click();
-		Thread.sleep(1000);
+		Browse.click();
 		uploadfile();
 		Downloadsavebutton.click();
-		
-	}
+		}
 
 	public void ClickDownlaodButton()
 	{
-		
-		waitForClickability(DownloadButton );
+		scrollingtoView(DownloadButton);
+		waitForVisibility(DownloadButton);
+		waitForClickability(DownloadButton);
 		DownloadButton.click();
 	}
 	
@@ -135,7 +137,7 @@ public class Myinfo_PersonalDetailsPage extends BasePage {
 		waitForVisibility(Deletebutton);
 	    waitForClickability(Deletebutton);
 		Deletebutton.click();
-		 waitForClickability(DeleteClick);
+		waitForClickability(DeleteClick);
 		DeleteClick.click();
 		
 	}

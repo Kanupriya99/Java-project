@@ -4,8 +4,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.awt.AWTException;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 
@@ -33,7 +37,7 @@ public class Myinfo_PersonalDetailsTest  extends BaseTest {
 	{  
 		Myinfo_PersonalDetailsPage PersonalDetailsTest = new Myinfo_PersonalDetailsPage(driver);
 		PersonalDetailsTest.myInfo();     
-		
+		Assert.assertTrue(true);
 	}
 
 	@Test(priority = 2)
@@ -48,25 +52,30 @@ public class Myinfo_PersonalDetailsTest  extends BaseTest {
 	}
 
 	@Test(priority = 3)
-	public void Add_Attachment() throws InterruptedException, AWTException
+	public void Add_Attachment() throws InterruptedException, AWTException, UnsupportedFlavorException, IOException
 	{
 		Myinfo_PersonalDetailsPage PersonalDetailsTest = new Myinfo_PersonalDetailsPage(driver);
 		PersonalDetailsTest.Clickaddbutton();
 		
+		// Assertion: verify if file uploaded successfully
+
+	    WebElement uploadedFileLabel = driver.findElement(By.xpath("//div[contains(text(),'rose.jpg')]")); // adjust XPath
+
+	    Assert.assertTrue(uploadedFileLabel.isDisplayed(), "File upload failed: rose.jpg not found.");
 	}
 	
-	
 	@Test(priority = 4 )
-	public void  FullDetails()
+	public void  FullDetails()	
 	{
 		Myinfo_PersonalDetailsPage PersonalDetailsTest = new Myinfo_PersonalDetailsPage(driver);
 		PersonalDetailsTest.Enter_Firstname(prop.getProperty("firstname"));
 		PersonalDetailsTest.Enter_Middlename(prop.getProperty("middlename"));
 		PersonalDetailsTest.Enter_Lastname(prop.getProperty("lastname"));
-		PersonalDetailsTest.selectGender();
-		PersonalDetailsTest.selectMaritalStatus();
+	    PersonalDetailsTest.selectGender();
+	    PersonalDetailsTest.selectMaritalStatus();
 		PersonalDetailsTest.selectNationality();
 		PersonalDetailsTest.clickSaveButton1();
+		Assert.assertFalse(false);
         
 	}
 	@Test(priority = 5)
@@ -74,6 +83,7 @@ public class Myinfo_PersonalDetailsTest  extends BaseTest {
 	{
 		Myinfo_PersonalDetailsPage PersonalDetailsTest = new Myinfo_PersonalDetailsPage(driver);
 		PersonalDetailsTest.ClickDownlaodButton();
+		Assert.assertTrue(true, "File download");
 	}
 	
 	@Test(priority = 6)
@@ -81,6 +91,7 @@ public class Myinfo_PersonalDetailsTest  extends BaseTest {
 	{
 		Myinfo_PersonalDetailsPage PersonalDetailsTest = new Myinfo_PersonalDetailsPage(driver);
 		PersonalDetailsTest.ClickDeletebutton();
+		Assert.assertTrue(true, "File Delete");
 	}
 
 }

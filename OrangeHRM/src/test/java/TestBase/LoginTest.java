@@ -1,5 +1,7 @@
 package TestBase;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,7 +21,7 @@ public class LoginTest extends BaseTest {
 		loginpage.enterusername("kanu");	
         loginpage.enterpassword("password");
 	    loginpage.clickloginbutton();
-	    Assert.assertFalse(false, "Login Failed { invalid credentials }");
+	    Assert.assertFalse(false);
 	}
 
     @Test(priority = 2)	
@@ -30,7 +32,7 @@ public class LoginTest extends BaseTest {
 		loginpage.enterusername("kanu");	
         loginpage.enterpassword(prop.getProperty("password"));
 	    loginpage.clickloginbutton();
-	    Assert.assertFalse(false, "Login Failed { invalid Password }");
+	    Assert.assertFalse(false);
 	}
 	
     @Test(priority = 3)	
@@ -41,20 +43,18 @@ public class LoginTest extends BaseTest {
    		loginpage.enterusername(prop.getProperty("username"));	
         loginpage.enterpassword("kanu");
    	    loginpage.clickloginbutton();
-   	    Assert.assertFalse(false, "Login Failed { invalid Username }");
+   	    Assert.assertFalse(false);
    	}
 
-    @Test(priority = 4)	
+    @Test(priority = 4)
+    public void Validcredentials() throws InterruptedException {
+        LoginPage loginpage = new LoginPage(driver);
+        loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+        loginpage.clickloginbutton();
+        Assert.assertTrue(loginpage.isLoginSuccessful(),"login should be successful");
 	
-   	public void Validcredentials()
-   	{
-        LoginPage loginpage =new LoginPage(driver);
-   		loginpage.enterusername(prop.getProperty("username"));	
-   	    loginpage.enterpassword(prop.getProperty("password"));
-   	    loginpage.clickloginbutton();
-   	    Assert.assertTrue(true, "login Done");
-   	    
-   	}
-   
-
+  
+       
+    
+   }
 }

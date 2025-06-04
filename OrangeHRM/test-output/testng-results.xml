@@ -1,193 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-28T16:07:25 IST" name="Default suite" finished-at="2025-05-28T16:09:01 IST" duration-ms="96134">
+  <suite started-at="2025-06-04T12:04:39 IST" name="Default suite" finished-at="2025-06-04T12:05:17 IST" duration-ms="37669">
     <groups>
     </groups>
-    <test started-at="2025-05-28T16:07:25 IST" name="Default test" finished-at="2025-05-28T16:09:01 IST" duration-ms="96134">
-      <class name="TestBase.Myinfo_PersonalDetailsTest">
-        <test-method is-config="true" signature="initialzation()[pri:0, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:25 IST" name="initialzation" finished-at="2025-05-28T16:07:31 IST" duration-ms="6220" status="PASS">
+    <test started-at="2025-06-04T12:04:39 IST" name="Default test" finished-at="2025-06-04T12:05:17 IST" duration-ms="37669">
+      <class name="TestBase.ProfilepictureTest">
+        <test-method is-config="true" signature="initialzation()[pri:0, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:04:39 IST" name="initialzation" finished-at="2025-06-04T12:05:00 IST" duration-ms="21372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialzation -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:31 IST" name="Login" finished-at="2025-05-28T16:07:34 IST" duration-ms="2369" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:00 IST" name="Login" finished-at="2025-06-04T12:05:03 IST" duration-ms="3106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="openMyInfo()[pri:1, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:34 IST" name="openMyInfo" finished-at="2025-05-28T16:07:36 IST" duration-ms="2299" status="PASS">
+        <test-method signature="openMyInfo()[pri:1, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:03 IST" name="openMyInfo" finished-at="2025-06-04T12:05:06 IST" duration-ms="2549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyInfo -->
-        <test-method signature="withoutdetials()[pri:2, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:36 IST" name="withoutdetials" finished-at="2025-05-28T16:07:37 IST" duration-ms="838" status="PASS">
+        <test-method signature="clickonPP()[pri:2, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:06 IST" name="clickonPP" finished-at="2025-06-04T12:05:07 IST" duration-ms="980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- withoutdetials -->
-        <test-method signature="Add_Attachment()[pri:3, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:37 IST" name="Add_Attachment" finished-at="2025-05-28T16:07:39 IST" duration-ms="2186" status="PASS">
+        </test-method> <!-- clickonPP -->
+        <test-method signature="Clickonaddbutton()[pri:3, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:07 IST" name="Clickonaddbutton" finished-at="2025-06-04T12:05:14 IST" duration-ms="6899" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_Attachment -->
-        <test-method signature="FullDetails()[pri:4, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:39 IST" name="FullDetails" finished-at="2025-05-28T16:07:41 IST" duration-ms="1596" status="PASS">
+        </test-method> <!-- Clickonaddbutton -->
+        <test-method signature="Clickonsavebutton()[pri:4, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:14 IST" name="Clickonsavebutton" finished-at="2025-06-04T12:05:16 IST" duration-ms="2269" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FullDetails -->
-        <test-method signature="ClickDownlaodButton()[pri:5, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:07:41 IST" name="ClickDownlaodButton" finished-at="2025-05-28T16:08:21 IST" duration-ms="40094" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //i[contains(@class, 'bi-download')]' (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //i[contains(@class, 'bi-download')]' (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Page.BasePage.waitForClickability(BasePage.java:37)
-at Page.Myinfo_PersonalDetailsPage.ClickDownlaodButton(Myinfo_PersonalDetailsPage.java:129)
-at TestBase.Myinfo_PersonalDetailsTest.ClickDownlaodButton(Myinfo_PersonalDetailsTest.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//i[contains(@class, 'bi-download')]"}
-  (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a40a00f0a64326ada53030ee6d0848d2, findElement {value=//i[contains(@class, 'bi-download')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Kanu\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51163/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a40a00f0a64326ada53030ee6d0848d2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickDownlaodButton -->
-        <test-method signature="ClickDeletebutton()[pri:6, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:08:21 IST" name="ClickDeletebutton" finished-at="2025-05-28T16:09:01 IST" duration-ms="40102" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .oxd-icon.bi-trash' (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: .oxd-icon.bi-trash' (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at Page.BasePage.waitForVisibility(BasePage.java:33)
-at Page.Myinfo_PersonalDetailsPage.ClickDeletebutton(Myinfo_PersonalDetailsPage.java:135)
-at TestBase.Myinfo_PersonalDetailsTest.ClickDeletebutton(Myinfo_PersonalDetailsTest.java:83)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".oxd-icon.bi-trash"}
-  (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a40a00f0a64326ada53030ee6d0848d2, findElement {value=.oxd-icon.bi-trash, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Kanu\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51163/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a40a00f0a64326ada53030ee6d0848d2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickDeletebutton -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestBase.Myinfo_PersonalDetailsTest@3b0090a4]" started-at="2025-05-28T16:09:01 IST" name="terminate" finished-at="2025-05-28T16:09:01 IST" duration-ms="297" status="PASS">
+        </test-method> <!-- Clickonsavebutton -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestBase.ProfilepictureTest@9d5509a]" started-at="2025-06-04T12:05:16 IST" name="terminate" finished-at="2025-06-04T12:05:17 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- TestBase.Myinfo_PersonalDetailsTest -->
+      </class> <!-- TestBase.ProfilepictureTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-  package Page;
+package Page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +22,12 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement login;
 	
+    @FindBy(xpath = "//*[@class='oxd-userdropdown-name']")
+    WebElement Userprofile;
 	
+	@FindBy(xpath = "//p[text()='Invalid credentials']")
+	WebElement errorMsg;
+
 	public void enterusername(String user)
 	{
 	 username.clear();
@@ -45,6 +50,16 @@ public class LoginPage extends BasePage {
     	enterpassword(password);
     	clickloginbutton();
     }
+
+    public boolean isLoginSuccessful() {
+        try {
+            waitForVisibility(Userprofile);
+            return Userprofile.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+	
    
     }
 

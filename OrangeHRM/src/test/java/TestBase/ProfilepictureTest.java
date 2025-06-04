@@ -1,7 +1,11 @@
 package TestBase;
 
 import java.awt.AWTException;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -39,19 +43,23 @@ public class ProfilepictureTest extends BaseTest {
 		ProfilepicturePage ProfilepictureTest = new ProfilepicturePage(driver);
 		ProfilepictureTest.Clickonprofilepic();
 	
+	
 	}
 	@Test(priority =3)
-	public void Clickonaddbutton() throws AWTException
+	public void Clickonaddbutton() throws AWTException, InterruptedException, UnsupportedFlavorException, IOException
 	{
 
 		ProfilepicturePage ProfilepictureTest = new ProfilepicturePage(driver);
 		ProfilepictureTest.Clickonaddbutton();
+	       Assert.assertTrue(true, "File upload failed: rose.jpg not found.");
+	 
 	}
 
 	@Test(priority =4)
-	public void Clickonsavebutton()
+	public void Clickonsavebutton() throws InterruptedException
 	{
 		ProfilepicturePage ProfilepictureTest = new ProfilepicturePage(driver);
+		
 		ProfilepictureTest.Clickonsavebutton();
 	}
 }

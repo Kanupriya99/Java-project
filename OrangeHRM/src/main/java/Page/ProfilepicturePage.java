@@ -1,6 +1,8 @@
 package Page;
 
 import java.awt.AWTException;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,28 +26,34 @@ public class ProfilepicturePage extends BasePage  {
 		@FindBy(xpath ="//button[@type='submit']")
 		WebElement SaveButton;
 		
+		@FindBy(xpath ="//img[contains(@src, 'viewPhoto/empNumber/7')]")
+		WebElement Verfiy;
+		
 		public void Clickonprofilepic()
 		{
 			waitForVisibility(Profilepic);
 			Profilepic.click();
 		}
 		
-		public void Clickonaddbutton() throws AWTException
+		public void Clickonaddbutton() throws AWTException, InterruptedException, UnsupportedFlavorException, IOException
 		{
 			waitForVisibility(AddButton);
 			AddButton.click();
 			uploadfile();
+			
 		} 
 		
-		public void Clickonsavebutton()
+		
+		public void Clickonsavebutton() throws InterruptedException
 		{
+			
+			scrollingtoView(SaveButton);
 			waitForVisibility(SaveButton);
 			SaveButton.click();
+			Thread.sleep(2000);
 		}
 
-		public boolean isProfilePicModalVisible() {
-			// TODO Auto-generated method stub
-			return false;
+		
 		} 
-	}
+	
 

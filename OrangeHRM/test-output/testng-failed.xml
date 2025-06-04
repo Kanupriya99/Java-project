@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestBase.Myinfo_PersonalDetailsTest">
+      <class name="TestBase.ProfilepictureTest">
         <methods>
+          <include name="Clickonaddbutton"/>
           <include name="terminate"/>
-          <include name="ClickDownlaodButton"/>
           <include name="initialzation"/>
-          <include name="ClickDeletebutton"/>
           <include name="Login"/>
         </methods>
-      </class> <!-- TestBase.Myinfo_PersonalDetailsTest -->
+      </class> <!-- TestBase.ProfilepictureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
