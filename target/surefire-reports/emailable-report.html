@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Testing</a></td><td class="num">11</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">68,928</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testing &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestBase.ProfilepictureTest</td><td><a href="#m0">Login</a></td><td rowspan="1">1749031830965</td><td rowspan="1">1047</td></tr><tr><th colspan="4">Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestBase.Myinfo_PersonalDetailsTest</td><td><a href="#m1">ClickDeletebutton</a></td><td rowspan="1">1749031809528</td><td rowspan="1">15847</td></tr><tr><th colspan="4">Testing &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">TestBase.ProfilepictureTest</td><td><a href="#m2">terminate</a></td><td rowspan="1">1749031832032</td><td rowspan="1">0</td></tr><tr><th colspan="4">Testing &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">TestBase.ProfilepictureTest</td><td><a href="#m3">Clickonaddbutton</a></td><td rowspan="1">1749031832023</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">Clickonsavebutton</a></td><td rowspan="1">1749031832032</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">clickonPP</a></td><td rowspan="1">1749031832019</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">openMyInfo</a></td><td rowspan="1">1749031832017</td><td rowspan="1">1</td></tr><tr><th colspan="4">Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestBase.LoginTest</td><td><a href="#m7">Validcredentials</a></td><td rowspan="1">1749031784619</td><td rowspan="1">3532</td></tr><tr class="passedeven"><td><a href="#m8">invalidcredentials</a></td><td rowspan="1">1749031780282</td><td rowspan="1">1004</td></tr><tr class="passedeven"><td><a href="#m9">invalidpassword</a></td><td rowspan="1">1749031783079</td><td rowspan="1">1535</td></tr><tr class="passedeven"><td><a href="#m10">invalidusername</a></td><td rowspan="1">1749031781301</td><td rowspan="1">1773</td></tr><tr class="passedodd"><td rowspan="2">TestBase.LogoutTest</td><td><a href="#m11">click_on_logout</a></td><td rowspan="1">1749031841570</td><td rowspan="1">457</td></tr><tr class="passedodd"><td><a href="#m12">click_on_profile_name</a></td><td rowspan="1">1749031840032</td><td rowspan="1">1536</td></tr><tr class="passedeven"><td rowspan="5">TestBase.Myinfo_PersonalDetailsTest</td><td><a href="#m13">Add_Attachment</a></td><td rowspan="1">1749031798919</td><td rowspan="1">6834</td></tr><tr class="passedeven"><td><a href="#m14">ClickDownlaodButton</a></td><td rowspan="1">1749031807646</td><td rowspan="1">1877</td></tr><tr class="passedeven"><td><a href="#m15">FullDetails</a></td><td rowspan="1">1749031805755</td><td rowspan="1">1888</td></tr><tr class="passedeven"><td><a href="#m16">openMyInfo</a></td><td rowspan="1">1749031795898</td><td rowspan="1">2184</td></tr><tr class="passedeven"><td><a href="#m17">withoutdetials</a></td><td rowspan="1">1749031798083</td><td rowspan="1">834</td></tr></tbody>
+</table>
+<h2>Testing</h2><h3 id="m0">TestBase.ProfilepictureTest#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Failed expected [true] but found [false]
+	at TestBase.ProfilepictureTest.Login(ProfilepictureTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestBase.Myinfo_PersonalDetailsTest#ClickDeletebutton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (ca3181c339cfa9cc630a92a974c4be6a)] -&gt; css selector: .oxd-icon.bi-trash.oxd-button-icon] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Kanu\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50145/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca3181c339cfa9cc630a92a974c4be6a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Page.BasePage.waitForClickability(BasePage.java:42)
+	at Page.Myinfo_PersonalDetailsPage.ClickDeletebutton(Myinfo_PersonalDetailsPage.java:140)
+	at TestBase.Myinfo_PersonalDetailsTest.ClickDeletebutton(Myinfo_PersonalDetailsTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestBase.ProfilepictureTest#terminate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestBase.ProfilepictureTest#Clickonaddbutton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Failed expected [true] but found [false]
+	at TestBase.ProfilepictureTest.Login(ProfilepictureTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestBase.ProfilepictureTest#Clickonsavebutton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Failed expected [true] but found [false]
+	at TestBase.ProfilepictureTest.Login(ProfilepictureTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestBase.ProfilepictureTest#clickonPP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Failed expected [true] but found [false]
+	at TestBase.ProfilepictureTest.Login(ProfilepictureTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestBase.ProfilepictureTest#openMyInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login Failed expected [true] but found [false]
+	at TestBase.ProfilepictureTest.Login(ProfilepictureTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestBase.LoginTest#Validcredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestBase.LoginTest#invalidcredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestBase.LoginTest#invalidpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestBase.LoginTest#invalidusername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestBase.LogoutTest#click_on_logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestBase.LogoutTest#click_on_profile_name</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">TestBase.Myinfo_PersonalDetailsTest#Add_Attachment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">TestBase.Myinfo_PersonalDetailsTest#ClickDownlaodButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">TestBase.Myinfo_PersonalDetailsTest#FullDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">TestBase.Myinfo_PersonalDetailsTest#openMyInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">TestBase.Myinfo_PersonalDetailsTest#withoutdetials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

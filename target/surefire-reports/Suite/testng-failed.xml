@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Testing(failed)" verbose="0">
+    <classes>
+      <class name="TestBase.Myinfo_PersonalDetailsTest">
+        <methods>
+          <include name="terminate"/>
+          <include name="initialzation"/>
+          <include name="ClickDeletebutton"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- TestBase.Myinfo_PersonalDetailsTest -->
+      <class name="TestBase.ProfilepictureTest">
+        <methods>
+          <include name="Clickonaddbutton"/>
+          <include name="terminate"/>
+          <include name="initialzation"/>
+          <include name="Login"/>
+          <include name="openMyInfo"/>
+          <include name="clickonPP"/>
+          <include name="Clickonsavebutton"/>
+        </methods>
+      </class> <!-- TestBase.ProfilepictureTest -->
+    </classes>
+  </test> <!-- Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
